@@ -9,9 +9,9 @@ import ua.kiev.prog.json.Rate;
 @Component
 public class RateRetriever {
 
-    private static final String URL = "http://data.fixer.io/api/latest?access_key=a7f108773f94f0de03695781411ce94b";
+    private static final String URL = "http://data.fixer.io/api/latest?access_key=30e7ff0de73cf99ac8842101abce80ca";
 
-    @Cacheable("rates")
+    @Cacheable("rates") // Redis
     public Rate getRate() {
         RestTemplate restTemplate = new RestTemplate();
         ResponseEntity<Rate> response = restTemplate.getForEntity(URL, Rate.class);

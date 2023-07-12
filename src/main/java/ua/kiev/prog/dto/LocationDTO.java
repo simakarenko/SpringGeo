@@ -3,6 +3,8 @@ package ua.kiev.prog.dto;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+// DB -> E -> R -> S -> |DTO| -> C -> JSON/View
+
 @Data
 @NoArgsConstructor
 public class LocationDTO {

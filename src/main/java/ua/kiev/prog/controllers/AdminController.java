@@ -30,6 +30,7 @@ public class AdminController {
 
     @GetMapping("geo")
     public List<LocationDTO> locations(@RequestParam(required = false, defaultValue = "0") int page) {
-        return locationService.getLocations(PageRequest.of(page, PAGE_SIZE, Sort.Direction.DESC, "id"));
+        return locationService.getLocations(
+                PageRequest.of(page, PAGE_SIZE, Sort.Direction.DESC, "id"));
     }
 }

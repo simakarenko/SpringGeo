@@ -3,4 +3,4 @@ $(document).ready(function(){
         $('#rate').text(data.rates.UAH);
         $('#date').text(data.date);
     });
-});
+}); // WebSockets
